@@ -1,0 +1,21 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "172ce94d146445a29fade6caa8a5ffcc.kph8XGXk2KupJWpO",
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+    "ANTHROPIC_MODEL": "glm-5"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "node .claude/hooks/pm-helper-hook.mjs 51225",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ]
+  },
+  "model": "glm-5"
+}
